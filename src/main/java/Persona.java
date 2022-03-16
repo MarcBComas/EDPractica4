@@ -3,7 +3,7 @@
  * @author marc barcelo comas
  * @author antoni xavier bascuñana
  */
-public abstract class Persona {
+public abstract class Persona extends Humano {
     // Atributos
     private String nombre;
     private String DNI;
