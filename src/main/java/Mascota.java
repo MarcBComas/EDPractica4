@@ -1,9 +1,9 @@
 /**
- * Clase abstracta Mascota que implementa la interface de Sonido
+ * Clase abstracta Mascota que implementa la interface de Onomatopeya
  * @author marc barcelo comas
  * @author antoni xavier bascuñana
  */
-public abstract class Mascota implements Sonido{
+public abstract class Mascota implements Onomatopeya {
     // Atributos
     private String nombre;
     private int edad;

@@ -1,10 +1,10 @@
 import java.util.Date;
 /**
- * Clase Barco que implementa la interface Sonido
+ * Clase Barco que implementa la interface Onomatopeya
  * @author marc barcelo comas
  * @author antoni xavier bascuñana
  */
-public class Barco implements Sonido{
+public class Barco implements Onomatopeya {
     // Atributos
     private String nombre;
     private Date fechaConstruccion;

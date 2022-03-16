@@ -1,9 +1,9 @@
 /**
- * Interface de Sonido
+ * Interface de Onomatopeya
  * @author marc barcelo comas
  * @author antoni xavier bascuñana
  */
-interface Sonido {
+interface Onomatopeya {
     public abstract void sonido() ;
 }
 
