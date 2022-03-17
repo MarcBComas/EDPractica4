@@ -7,3 +7,5 @@ Se ha extraido la superclase Persona para crear la superclase Humano.
 Se ha borrado la interfaz del proyecto para posteriormente volver a crearla en base a la clase mascota
 ## 1.4.0 Renombrar la clase gato
 Se ha renombrado la clase Gato a Felino
+## 1.5.0 copia de la clase Barco
+Se ha copiado la clase barco en la clase copia barco

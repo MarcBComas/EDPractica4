@@ -5,14 +5,11 @@ import java.util.Date;
  * @author antoni xavier bascuñana
  */
 public class Barco implements Onomatopeya {
-    // Atributos
-    private String nombre;
-    private Date fechaConstruccion;
-    private int numCamarotes;
-    private Motor motor;
+    private final CopiaBarco copiaBarco = new CopiaBarco();
+
     // Constructor vacio
     public Barco() {
-        motor = new Motor();
+        copiaBarco.setMotor(new Motor());
     }
     /**
      * Constructor completo
@@ -21,45 +18,65 @@ public class Barco implements Onomatopeya {
      * @param numCamarotes Integer que contiene el numero de camarotes
      */
     public Barco(String nombre, Date fechaConstruccion, int numCamarotes) {
-        motor = new Motor();
-        this.nombre = nombre;
-        this.fechaConstruccion = fechaConstruccion;
-        this.numCamarotes = numCamarotes;
+        copiaBarco.setMotor(new Motor());
+        this.copiaBarco.setNombre(nombre);
+        this.copiaBarco.setFechaConstruccion(fechaConstruccion);
+        this.copiaBarco.setNumCamarotes(numCamarotes);
     }
 
     /**
      * Getters/Setters del atributo nombre
      * @param nombre String que contiene el nuevo valor del atributo nombre
      */
-    public void setNombre(String nombre) { this.nombre = nombre; }
-    public String getNombre() { return this.nombre; }
+    public void setNombre(String nombre) {
+        copiaBarco.setNombre(nombre);
+    }
+    public String getNombre() {
+        return copiaBarco.getNombre();
+    }
 
     /**
      * Getters/Setters del atributo fechaConstruccion
      * @param fechaConstruccion Date que contiene el nuevo valor del atributo fechaConstruccion
      */
-    public void setFechaConstruccion(Date fechaConstruccion) { this.fechaConstruccion = fechaConstruccion;}
-    public Date getFechaConstruccion() { return this.fechaConstruccion; }
+    public void setFechaConstruccion(Date fechaConstruccion) {
+        copiaBarco.setFechaConstruccion(fechaConstruccion);
+    }
+    public Date getFechaConstruccion() {
+        return copiaBarco.getFechaConstruccion();
+    }
 
     /**
      * Getters/Setters del atributo numCamarotes
      * @param numCamarotes Integer que contiene el nuevo valor de numCamarotes
      */
-    public void setNumCamarotes(int numCamarotes) { this.numCamarotes = numCamarotes; }
-    public int getNumCamarotes() { return this.numCamarotes; }
+    public void setNumCamarotes(int numCamarotes) {
+        copiaBarco.setNumCamarotes(numCamarotes);
+    }
+    public int getNumCamarotes() {
+        return copiaBarco.getNumCamarotes();
+    }
 
     /**
      * Getters/Setters del atributo motor
      * @param motor Objeto motor que contiene el nuevo valor de motor
      */
-    public void setMotor(Motor motor) { this.motor = motor; }
-    public Motor getMotor() { return this.motor; }
+    public void setMotor(Motor motor) {
+        copiaBarco.setMotor(motor);
+    }
+    public Motor getMotor() {
+        return copiaBarco.getMotor();
+    }
 
     // Implementacion del metodo sonido()
     @Override
-    public void sonido() { System.out.println("CHUU CHUU"); }
+    public void sonido() {
+        copiaBarco.sonido();
+    }
     // Metodo toString
     @Override
-    public String toString() { return "Barco{nombre="+this.nombre+", fechaConstruccion="+this.fechaConstruccion+", numCamarotes="+this.numCamarotes+", motor="+this.motor+'}'; }
+    public String toString() {
+        return copiaBarco.toString();
+    }
 
 }
