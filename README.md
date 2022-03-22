@@ -1,4 +1,8 @@
 # ED Practica 4
+## Equipo
+Marc Barceló Comas
+
+Antoni Xavier Bascuñana Sanchez
 ## 1.1.0 Renombrar
 Se ha renombrado la clase abstracta Onomatopeya a Onomatopeya.
 ## 1.2.0 Extraer Superclase
